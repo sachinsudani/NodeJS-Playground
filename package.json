@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-playground",
+  "version": "1.0.0",
+  "description": "Node js Playground",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "repository": "https://github.com/sachinsudani/NodeJS-Playground.git",
+  "author": "Sachin Sudani",
+  "license": "MIT"
+}
