@@ -10,5 +10,8 @@
   },
   "repository": "https://github.com/sachinsudani/NodeJS-Playground.git",
   "author": "Sachin Sudani",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
