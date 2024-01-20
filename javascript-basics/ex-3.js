@@ -6,4 +6,9 @@ const person = {
 	},
 };
 // console.log(person);
-person.greet();
+// person.greet();
+
+// 4. Spread operator
+
+const copiedPerson = { ...person };
+console.log(copiedPerson);
