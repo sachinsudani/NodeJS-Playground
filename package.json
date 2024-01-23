@@ -5,8 +5,8 @@
 	"main": "app.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node nodejs-basics/app.js",
-		"dev": "node nodejs-basics/app.js"
+		"start": "nodemon nodejs-basics/app.js",
+		"dev": "nodemon nodejs-basics/app.js"
 	},
 	"repository": "https://github.com/sachinsudani/NodeJS-Playground.git",
 	"author": "Sachin Sudani",
