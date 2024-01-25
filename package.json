@@ -5,13 +5,17 @@
 	"main": "app.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon nodejs-basics/app.js",
-		"dev": "nodemon nodejs-basics/app.js"
+		"start": "nodemon express-js/app.js",
+		"dev": "nodemon express-js/app.js"
 	},
 	"repository": "https://github.com/sachinsudani/NodeJS-Playground.git",
 	"author": "Sachin Sudani",
 	"license": "MIT",
+	"type": "module",
 	"devDependencies": {
 		"nodemon": "^3.0.3"
+	},
+	"dependencies": {
+		"express": "^4.18.2"
 	}
 }
