@@ -12,6 +12,7 @@
 	"author": "Sachin Sudani",
 	"license": "MIT",
 	"type": "module",
+	"": true,
 	"devDependencies": {
 		"nodemon": "^3.0.3"
 	},

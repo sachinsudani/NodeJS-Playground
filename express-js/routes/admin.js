@@ -1,10 +1,19 @@
 import { Router } from 'express';
+import path from 'path';
 
+const __dirname = path.resolve();
 const router = Router();
 
 router.get('/add-product', (req, res, next) => {
-	res.send(
-		'<form action="/admin/add-product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>'
+	res.sendFile(
+		path.join(
+			__dirname,
+			'../',
+			'NodeJs-Playground',
+			'express-js',
+			'views',
+			'add-product.html'
+		)
 	);
 });
 
