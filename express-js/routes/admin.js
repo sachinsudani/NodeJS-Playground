@@ -4,6 +4,8 @@ import path from 'path';
 const __dirname = path.resolve();
 const router = Router();
 
+const products = [];
+
 router.get('/add-product', (req, res, next) => {
 	res.sendFile(
 		path.join(
@@ -18,8 +20,9 @@ router.get('/add-product', (req, res, next) => {
 });
 
 router.post('/add-product', (req, res, next) => {
-	console.log(req.body);
+	products.push({ title: req.body.title });
 	res.redirect('/');
 });
 
 export default router;
+export { products };
