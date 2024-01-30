@@ -6,17 +6,7 @@ const __dirname = path.resolve();
 const router = Router();
 
 router.get('/', (req, res, next) => {
-	console.log(products);
-	res.sendFile(
-		path.join(
-			__dirname,
-			'..',
-			'NodeJs-Playground',
-			'express-js',
-			'views',
-			'shop.html'
-		)
-	);
+	res.render('shop', { prods: products, docTitle: 'Shop' });
 });
 
 export default router;
