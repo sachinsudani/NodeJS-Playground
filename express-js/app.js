@@ -8,6 +8,7 @@ const __dirname = path.resolve();
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'express-js', 'public')));
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);

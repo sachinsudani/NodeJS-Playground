@@ -8,7 +8,7 @@ router.get('/add-product', (req, res, next) => {
 	res.sendFile(
 		path.join(
 			__dirname,
-			'../',
+			'..',
 			'NodeJs-Playground',
 			'express-js',
 			'views',
