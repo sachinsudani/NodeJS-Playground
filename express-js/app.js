@@ -9,6 +9,8 @@ const __dirname = path.resolve();
 const app = express();
 const hbs = handleBars.create({
 	extname: 'hbs',
+	layoutsDir: 'express-js/views/layouts/',
+	defaultLayout: 'main-layout',
 });
 
 app.engine('hbs', hbs.engine);
