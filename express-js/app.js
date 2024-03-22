@@ -3,18 +3,11 @@ import bodyParser from 'body-parser';
 import adminRoutes from './routes/admin.js';
 import shopRoutes from './routes/shop.js';
 import path from 'path';
-import handleBars from 'express-handlebars';
 
 const __dirname = path.resolve();
 const app = express();
-const hbs = handleBars.create({
-	extname: 'hbs',
-	layoutsDir: 'express-js/views/layouts/',
-	defaultLayout: 'main-layout',
-});
 
-app.engine('hbs', hbs.engine);
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'express-js', 'views'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
