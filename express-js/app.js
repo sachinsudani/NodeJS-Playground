@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import adminRoutes from './routes/admin.js';
 import shopRoutes from './routes/shop.js';
 import path from 'path';
+import { get404 } from './controllers/error.js';
 
 const __dirname = path.resolve();
 const app = express();
@@ -16,9 +17,7 @@ app.use(express.static(path.join(__dirname, 'express-js', 'public')));
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res, next) => {
-	res.status(404).render('404', { pageTitle: 'Page Not Found' });
-});
+app.use(get404);
 
 console.log('Server is running on port 3000');
 
